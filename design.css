@@ -1,0 +1,91 @@
+body {
+        font-family: verdana;
+}
+header {
+        padding: 2rem;
+        box-shadow: 0 5px 10px #F8FCFF;
+        background-color: #ABC798;
+        position: sticky;
+        top: 0;
+        left: 0;
+}
+nav {
+        display: flex;
+        justify-content: space-between;
+        align-item: center;
+}
+nav ul {
+        display: flex;
+        list-style: none;
+}
+nav ul a {
+        margin-left: 2rem;
+        font-weight: bold;
+}
+.nav-item {
+        color: black;
+        text-decoration: none;
+}
+.nav-item:hover {
+        color: orange;
+}
+main {
+        padding: 1rem;
+        background-color: #ABC798;
+}
+footer {
+        background-color: #ABC798;
+        padding: 1rem;
+        color: white;
+        position: sticky;
+        bottom: 0;
+        display: flex;
+        justify-content: space-between;
+        box-shadow: 0 -5px 10px #F8FCFF;
+        font-weight: bold;
+}
+footer a{
+        text-decoration: none;
+        color: white;
+}
+p {
+        color: white;
+}
+p::first-letter {
+        font-size: 170%;
+        color: green;
+}
+#colorir_lateral {
+        background-color: black;
+        color: orange;
+}
+#colorir_conteudo {
+        background-color: black;
+        color: orange;
+}
+h1 {
+        color: black;
+}
+h2 {
+        font-size: 120%;
+}
+h3 {
+        color: black;
+}
+table {
+        width: 70%;
+}
+td, th {
+        border: 1px solid #dddddd;
+        color: black;
+        text-align: left;
+        padding: 8px;
+}
+tr:nth-child(even) {
+        background-color: #dddddd;
+}0
+@media oly screen and (max-width:620px {
+            .menu, .main, .right {
+            width 100%;
+}
+}

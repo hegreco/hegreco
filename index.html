@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Minha Pagina da Web</title>
+    <link rel="stylesheet" href="design.css" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="instrucao.js"></script>
+    <script src="instrucao_01.js"></script>
+</head>
+<body>
+<header>
+    <nav>
+        <a href="#" id="logo" class="nav-item" ><h2>h e g r e c o</h2></a>
+        <ul>
+            <a class="nav-item" href="/fotos" title="Fotos" target="_blank">Fotos de Dogs</a>
+            <a class="nav-item" href="/user" title="Usuario" target="_blank">Usuario</a>
+        </ul>
+    </nav>
+</header>
+    <main>
+        <p id="colorir_conteudo" >Conteudo da pagina</p>
+            <form action="/pagina-processa-dados-do-form" method="post">
+                <fieldset>
+                    <legend>Dados Gerais</legend>
+                    <label for="nome">Nome:</label>
+                    <input id="nome" minlength="3" name="nome" type="text" required/>
+                    <label for="data_nascimento">Data de Nascimento:</label>
+                    <input type="text" id="data_nascimento" name="data_nascimento"/>
+                    <label for="cpf">CPF:</label>
+                    <input id="cpf" type="text" minlength="11" maxlength="11" name="CPF" required/>
+                    <label for="tel">Tel. Celular</label>
+                    <input type="tel" maxlength="11" id="tel" name="tel" placeholder="11123456789" required/>
+                </fieldset>
+                <fieldset>
+                    <legend>Endereço</legend>
+                    <label for="tipo_endereco">Tipo:</label>
+                    <select id="tipo_endereco">
+                        <option value="">Selecione</option>
+                        <option value="">Rua</option>
+                        <option value="">Estrada</option>
+                        <option value="">Rodovia</option>
+                        <option value="">Outros</option>
+                    </select>
+                    <label for="logradouro_endereco">Logradouro:</label>
+                    <input type="text" id="logradouro_endereco"/>
+                    <label for="numero_endereco">Número:</label>
+                    <input type="text" id="numero_endereco"/>
+                    <label for="complemento_endereco">Complemento:</label>
+                    <input type="text" id="complemento_endereco"/>
+                </fieldset>
+                <fieldset>
+                    <legend>Fale Conosco</legend>
+                    <label for="tipo_msg">Tipo de Mensagem:</label>
+                    <select id="tipo_msg" required>
+                        <option value="">Selecione</option>
+                        <option value="Sugestão">Sugestão</option>
+                        <option value="Crítica">Crítica</option>
+                        <option value="Elogio">Elogio</option>
+                    </select>
+                    <label for="msg">Mensagem:</label>
+                    <textarea id="msg" name="msg"></textarea>
+                </fieldset>
+                <fieldset>
+                    <button type="submit">Enviar sua mensagem</button>
+                    <button type="reset">Limpar o Formulário</button>
+                </fieldset>
+            </form>
+            <br>
+            <table>
+            <thead>
+                <tr><th>Empresa</th><th>Contato</th><th>País</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>Alfreds Futterkiste</td><td>Maria Anders</td><td>Germany</td></tr>
+                <tr><td>Centro comercial</td><td>Francisco Chang</td><td>Mexico</td></tr>
+                <tr><td>Ernst Handel</td><td>Ronaldo Mendel</td><td>Austria</td></tr>
+            </tbody>
+            <tbody>
+                <tr><td colspan="3">Atendemos 24 horas</td></tr>
+            </tbody>
+            </table>
+            <br>
+         <form action="/">
+                <label for="username">Username</label><br>
+                <input type="text" id="username" name="username" required><br>
+                <label for="pwd">Password(8 caracteres minimo)</label><br>
+                <input type="password" id="pwd" name="username" minlength="8" required><br><br>
+                <input type="submit" VALUE="enviar" name="username"><br>
+         </form>
+        <br>
+        <form method="post"><input type="button" onclick="mostrar()" value="Gerar Valores aleatorios"></form>
+        <form method="post"><input type="button" onclick="divisao()" value="Divisão"></form>
+        <form method="post"><input type="button" onclick="multiplicacao()" value="Multiplicação"></form>
+        <form method="post"><input type="button" onclick="adicao()" value="Adição"></form>
+        <form method="post"><input type="button" onclick="subtracao()" value="Subtração"></form>
+    </main>
+<footer>
+    h e g r e c o<a href="https://www.instagram.com/hugo_greco/" class="material-icons" title="instagram" target="_blank">camera_alt</a>
+    <script src="instrucao_02.js"></script>
+</footer>
+</body>
+</html>
